@@ -1,5 +1,5 @@
 
-# LSTM for Predictive Maintenance
+# Deep Learning for Predictive Maintenance
 
 Deep learning is one of the hottest trends in the machine learning space nowadays, and there are many fields and applications where it stands out, such as driverless cars, speech and image recognition, robotics and finance. Deep learning is a set of algorithms that is inspired by the shape of our brain (biological neural networks), and machine learning and cognitive scientists usually refer to it as Artificial Neural Networks (ANN).
 
