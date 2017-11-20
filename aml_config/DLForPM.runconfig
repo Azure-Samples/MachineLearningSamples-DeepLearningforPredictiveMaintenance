@@ -1,0 +1,10 @@
+ArgumentVector:
+- $file
+CondaDependenciesFile: aml_config/conda_dependencies.yml
+EnvironmentVariables: null
+Framework: PySpark
+PrepareEnvironment: false
+SparkDependenciesFile: aml_config/spark_dependencies.yml
+Target: DLForPM
+TrackedRun: true
+UseSampling: true
