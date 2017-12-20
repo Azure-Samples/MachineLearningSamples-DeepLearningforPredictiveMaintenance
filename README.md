@@ -11,7 +11,7 @@ Predictive maintenance is also a very popular area where many different techniqu
 
 In this tutorial, we build a LSTM network for the data set and scenerio described at [Predictive Maintenance](https://gallery.cortanaintelligence.com/Collection/Predictive-Maintenance-Template-3) to predict remaining useful life of aircraft engines. In summary, the template uses simulated aircraft sensor values to predict when an aircraft engine will fail in the future so that maintenance can be planned in advance.
 
-This tutorial uses [keras](https://keras.io/) deep learning library with Microsoft Cognitive Toolkit [CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/Using-CNTK-with-Keras)as backend.
+This tutorial uses [keras](https://keras.io/) deep learning library with Microsoft Cognitive Toolkit [CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/Using-CNTK-with-Keras) as backend.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ The Model Building Jupyter Notebook in `Code/2_model_building_and_evaluation.ipn
 
 ## Task 3: Operationalization
 
-The operationalization Jupyter Notebook in `Code/3_operationalization.ipnyb` that takes the stored model and builds required functions and schema for calling the model on an Azure hosted web service. The notebook tests the functions, and zips the operationalization assets into a zip file.
+The operationalization Jupyter Notebook in `Code/3_operationalization.ipnyb` that takes the stored model and builds required functions and schema for calling the model on an Azure hosted web service. The notebook tests the functions,and zips the operationalization assets into a zip file.
 
 ## Conclusion
 
