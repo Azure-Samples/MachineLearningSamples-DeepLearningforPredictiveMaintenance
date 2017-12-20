@@ -1,20 +1,20 @@
  # Deep Learning for Predictive Maintenance
 
 The detailed documentation for this real world scenario includes the step-by-step walk-through:
-[https://docs.microsoft.com/en-us/azure/machine-learning/preview/scenario-deep-learning-for-predictive-maintenance](https://docs.microsoft.com/en-us/azure/machine-learning/preview/scenario-deep-learning-for-predictive-maintenance)
+[https://docs.microsoft.com/azure/machine-learning/preview/scenario-predictive-maintenance](https://docs.microsoft.com/azure/machine-learning/preview/scenario-predictive-maintenance)
 
 The public GitHub repository for this real world scenario contains all the code samples:
 [https://github.com/Azure/MachineLearningSamples-DeepLearningforPredictiveMaintenance](https://github.com/Azure/MachineLearningSamples-DeepLearningforPredictiveMaintenance)
 
 ## Introduction
-![](https://github.com/Azure/MachineLearningSamples-DeepLearningforPredictiveMaintenance/blob/master/Images/pm_photo.jpg "Predictive Maintenance")
+
 Deep learning is one of the most popular trends in the machine learning space nowadays, and there are many fields and applications where it stands out, such as driverless cars, speech and image recognition, robotics and finance. Deep learning is a set of algorithms that is inspired by the shape of our brain (biological neural networks), and machine learning and cognitive scientists usually refer to it as Artificial Neural Networks (ANN).
 
 Predictive maintenance is also a very popular area where many different techniques are designed to help determine the condition of an equipment in order to predict when maintenance should be performed. In predictive maintenance scenarios, data is collected over time to monitor the state of an equipment with the final goal of finding patterns to predict failures. Among the deep learning methods, [Long Short Term Memory (LSTM)](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) networks are especially appealing to the predictive maintenance domain due to the fact that they are very good at learning from sequences. This fact lends itself to their applications using time series data by making it possible to look back for longer periods of time to detect failure patterns.
 
 In this tutorial, we build a LSTM network for the data set and scenerio described at [Predictive Maintenance](https://gallery.cortanaintelligence.com/Collection/Predictive-Maintenance-Template-3) to predict remaining useful life of aircraft engines. In summary, the template uses simulated aircraft sensor values to predict when an aircraft engine will fail in the future so that maintenance can be planned in advance.
 
-This tutorial uses [keras](https://keras.io/) deep learning library with Microsoft Cognitive Toolkit [CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/Using-CNTK-with-Keras) as backend.
+This tutorial uses [keras](https://keras.io/) deep learning library with Microsoft Cognitive Toolkit [CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/Using-CNTK-with-Keras)as backend.
 
 ## Prerequisites
 
@@ -22,6 +22,9 @@ This tutorial uses [keras](https://keras.io/) deep learning library with Microso
 - An installed copy of Azure Machine Learning Workbench with a workspace created.
 - For model operationalization: Azure Machine Learning Operationalization with a local deployment environment setup and a [model management account](https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-overview)
 
+## Data/Telemetry
+
+The Deep Learning for Predictive Maintenance tutorial collects usage data and sends it to Microsoft to help improve our products and services. Read our privacy statement to learn more.
 
 ## Let's Begin
 
@@ -55,6 +58,7 @@ The Model Building Jupyter Notebook in `Code/2_model_building_and_evaluation.ipn
 The operationalization Jupyter Notebook in `Code/3_operationalization.ipnyb` that takes the stored model and builds required functions and schema for calling the model on an Azure hosted web service. The notebook tests the functions, and zips the operationalization assets into a zip file.
 
 ## Conclusion
+
 This tutorial serves as a guide for beginners looking to apply deep learning in predictive maintenance domain within the Jupyter notebook environment in *Azure Machine Learning Workbench*. This tutorial uses a simple scenario where only one data source (sensor values) is used to make predictions. In more advanced predictive maintenance scenarios such as in [Predictive Maintenance Modelling Guide](https://gallery.cortanaintelligence.com/Notebook/Predictive-Maintenance-Modelling-Guide-R-Notebook-1), there are many other data sources (i.e. historical maintenance records, error logs, machine and operator features etc.) which may require different types of treatments to be used in the deep learning networks. Since predictive maintenance is not a typical domain for deep learning, its application is an open area of research.
 
 ## Contributing
