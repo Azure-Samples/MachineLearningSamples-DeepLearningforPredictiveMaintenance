@@ -1,7 +1,0 @@
-address: 52.168.81.49
-baseDockerImage: microsoft/mmlspark:plus-0.7.91
-nativeSharedDirectory: ~/.azureml/share/
-password: AzureMlSecret=DLForPM#lazzeri#8d3e200cc8bb4e6ab8456aab7720b816
-sharedVolumes: true
-type: remotedocker
-username: lazzeri
