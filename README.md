@@ -27,16 +27,16 @@ The Deep Learning for Predictive Maintenance tutorial collects usage data and se
 
 To run on your local machine, from the AML Workbench `File` menu, select either the `Open Command Prompt` or `Open PowerShell` CLI. Within the CLI windows execute the following commands:
 
-`az ml experiment prepare --target docker --run-configuration docker`
+```az ml experiment prepare --target docker --run-configuration docker```
 
  We suggest running on a  DS4_V2 standard [Data Science Virtual Machine for Linux (Ubuntu)](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-ads.linux-data-science-vm-ubuntu). Once the DSVM is configured, you need to run the following two commands:
 
-`az ml computetarget attach remotedocker --name [Desired_Connection_Name] --address [VM_IP_Address] --username [VM_Username] --password [VM_UserPassword] --type`
+```az ml computetarget attach remotedocker --name [Desired_Connection_Name] --address [VM_IP_Address] --username [VM_Username] --password [VM_UserPassword]```
 
-`az ml experiment prepare --target [Desired_Connection_Name] --run-configuration [Desired_Connection_Name]`
+```az ml experiment prepare --target [Desired_Connection_Name] --run-configuration [Desired_Connection_Name]```
 
 With the docker images _prepared_, open the jupyter notebook server either within the *AML Workbench* notebooks tab, or to start a browser-based server, run:
-`az ml notebook start`
+```az ml notebook start```
 
 - Notebooks are stored in the `Code` directory found in the Jupyter environment. We run these notebooks sequentially as numbered, starting on (`Code\ 1_data_ingestion_and_preparation.ipynb `).
 
