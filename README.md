@@ -9,14 +9,14 @@ Deep learning is one of the most popular trends in the machine learning space no
 
 Predictive maintenance is also a very popular area where many different techniques are designed to help determine the condition of an equipment in order to predict when maintenance should be performed. In predictive maintenance scenarios, data is collected over time to monitor the state of an equipment with the final goal of finding patterns to predict failures. Among the deep learning methods, [Long Short Term Memory (LSTM)](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) networks are especially appealing to the predictive maintenance domain due to the fact that they are very good at learning from sequences. This fact lends itself to their applications using time series data by making it possible to look back for longer periods of time to detect failure patterns.
 
-In this tutorial, we build a LSTM network for the data set and scenerio described at [Predictive Maintenance](https://gallery.cortanaintelligence.com/Collection/Predictive-Maintenance-Template-3) to predict remaining useful life of aircraft engines. In summary, the template uses simulated aircraft sensor values to predict when an aircraft engine will fail in the future so that maintenance can be planned in advance.
+In this tutorial, we build a LSTM network for the data set and scenario described at [Predictive Maintenance](https://gallery.cortanaintelligence.com/Collection/Predictive-Maintenance-Template-3) to predict remaining useful life of aircraft engines. In summary, the template uses simulated aircraft sensor values to predict when an aircraft engine will fail in the future so that maintenance can be planned in advance.
 
-This tutorial uses [keras](https://keras.io/) deep learning library with Microsoft Cognitive Toolkit [CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/Using-CNTK-with-Keras) as backend.
+This tutorial uses [keras](https://keras.io/) deep learning library with Microsoft Cognitive Toolkit [CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/Using-CNTK-with-Keras) as back end.
 
 ## Prerequisites
 
 - An [Azure account](https://azure.microsoft.com/free/) (free trials are available).
-- An installed copy of Azure Machine Learning Workbench with a workspace created.
+- An installed copy of Azure Machine Learning Workbench with a work space created.
 - For model operationalization: Azure Machine Learning Operationalization with a local deployment environment setup and a [model management account](https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-overview)
 
 ## Data/Telemetry
@@ -35,7 +35,7 @@ To run on your local machine, from the AML Workbench `File` menu, select either 
 
 ```az ml experiment prepare --target [Desired_Connection_Name] --run-configuration [Desired_Connection_Name]```
 
-With the docker images _prepared_, open the jupyter notebook server either within the *AML Workbench* notebooks tab, or to start a browser-based server, run:
+With the docker images _prepared_, open the Jupyter notebook server either within the *AML Workbench* notebooks tab, or to start a browser-based server, run:
 ```az ml notebook start```
 
 - Notebooks are stored in the `Code` directory found in the Jupyter environment. We run these notebooks sequentially as numbered, starting on (`Code\ 1_data_ingestion_and_preparation.ipynb `).
