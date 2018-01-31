@@ -11,7 +11,7 @@ Predictive maintenance is also a very popular area where many different techniqu
 
 In this tutorial, we build a LSTM network for the data set and scenario described at [Predictive Maintenance](https://gallery.cortanaintelligence.com/Collection/Predictive-Maintenance-Template-3) to predict remaining useful life of aircraft engines. In summary, the template uses simulated aircraft sensor values to predict when an aircraft engine will fail in the future so that maintenance can be planned in advance.
 
-This tutorial uses [keras](https://keras.io/) deep learning library with Microsoft Cognitive Toolkit [CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/Using-CNTK-with-Keras) as the back end.
+This tutorial uses [keras](https://keras.io/) deep learning library with [Tensorflow](https://www.tensorflow.org/) as the backend.
 
 ## Prerequisites
 
@@ -19,9 +19,15 @@ This tutorial uses [keras](https://keras.io/) deep learning library with Microso
 - An installed copy of Azure Machine Learning Workbench with a work space created.
 - For model operationalization: Azure Machine Learning Operationalization with a local deployment environment setup and a [model management account](https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-overview)
 
-## Data/Telemetry
+## Login
 
-The Deep Learning for Predictive Maintenance tutorial collects usage data and sends it to Microsoft to help improve our products and services. Read our privacy statement to learn more.
+Once you have install the AML Workbench app, we need to connect the app to your Azure subscription. From the AML Workbench `File` menu, select either the `Open Command Prompt` or `Open PowerShell` CLI. The CLI interface allows you to access your Azure services using the `az` commands. First login to your Azure account with the command:
+
+```
+az login
+``` 
+
+This will generate a key to be used with the `https:\\aka.ms\devicelogin` URL. The CLI will remain blocked until the device login operation returns.
 
 ## Let's Begin
 
@@ -58,7 +64,10 @@ The operationalization Jupyter Notebook in `Code/3_operationalization.ipnyb` tha
 
 This tutorial serves as a guide for beginners looking to apply deep learning in predictive maintenance domain within the Jupyter notebook environment in *Azure Machine Learning Workbench*. This tutorial uses a simple scenario where only one data source (sensor values) is used to make predictions. In more advanced predictive maintenance scenarios such as in [Predictive Maintenance Modelling Guide](https://gallery.cortanaintelligence.com/Notebook/Predictive-Maintenance-Modelling-Guide-R-Notebook-1), there are many other data sources (i.e. historical maintenance records, error logs, machine and operator features etc.) which may require different types of treatments to be used in the deep learning networks. Since predictive maintenance is not a typical domain for deep learning, its application is an open area of research.
 
-## Contributing
+# Data/Telemetry
+ This advance scenario for *Deep Learning for Predictive Maintenance* collects usage data and sends it to Microsoft to help improve our products and services. Read our [privacy statement](https://privacy.microsoft.com/en-us/privacystatement) to learn more. 
+
+# Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
 
