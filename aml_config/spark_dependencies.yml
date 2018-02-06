@@ -13,6 +13,7 @@ configuration:
 # Repositories to search for the specified Spark packages.
 repositories:
   - "https://mmlspark.azureedge.net/maven"
+  - "https://azuremldownloads.blob.core.windows.net/repo5qh91kdjs6"
 
 # Spark packages to include in the run.
 packages:
@@ -24,7 +25,12 @@ packages:
   # Details: https://github.com/Azure/mmlspark
   - group: "com.microsoft.ml.spark"
     artifact: "mmlspark_2.11"
-    version: "0.7.9"
+    version: "0.9.9"
+
+  # Required for data preparation operations on Spark dataframes.
+  - group: "com.microsoft"
+    artifact: "dprep_2.11"
+    version: "0.15"
 
   #	Required for SQL Server data sources.
   - group: "com.microsoft.sqlserver"
