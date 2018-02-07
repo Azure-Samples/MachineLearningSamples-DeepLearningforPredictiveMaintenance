@@ -7,7 +7,7 @@ The public GitHub repository for this real world scenario contains all the code 
 
 ## Introduction
 
-Deep learning is one of the most popular trends in the machine learning space with applications to many eras including driverless cars, speech and image recognition, robotics and finance. Deep learning, also referred to as  Artificial Neural Networks (ANN), is a set of algorithms inspired by the shape of our brain (biological neural networks).
+Deep learning is one of the most popular trends in the machine learning space with applications to many areas including driverless cars, speech and image recognition, robotics and finance. Deep learning, also referred to as  Artificial Neural Networks (ANN), is a set of algorithms inspired by the shape of our brain (biological neural networks).
 
 Predictive maintenance is uses machine learning methods to determine the condition of an equipment in order to preemptively trigger a maintenance visit to avoid adverse machine performance. In these scenarios, data is collected over time to monitor the state of an equipment with the final goal of finding patterns to predict failures. [Long Short Term Memory (LSTM)](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) networks are especially appealing to the predictive maintenance domain due to their ability at learning from sequences of data. LSTM are designed for application to time series data in order to look back over periods of time to detect temporal patterns that could lead to machine failures.
 
