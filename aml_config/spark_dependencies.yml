@@ -25,7 +25,7 @@ packages:
   # Details: https://github.com/Azure/mmlspark
   - group: "com.microsoft.ml.spark"
     artifact: "mmlspark_2.11"
-    version: "0.9.9"
+    version: "0.8.9"
 
   # Required for data preparation operations on Spark dataframes.
   - group: "com.microsoft"
